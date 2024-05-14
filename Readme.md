@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new QueryOptions {
+var queryOptions = new distancecalculatorQueryOptions {
   lat1 = 36.7783,
   lon1 = -119.4179,
   lat2 = 34.0522,
@@ -81,11 +81,12 @@ var queryOptions = new QueryOptions {
 ###### Simple Request
 
 ```
-var response = apiClient.execute(queryOptions);
+var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    Console.WriteLine(response);
+    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    Console.WriteLine(jsonResponse);
 }
 ```
 
