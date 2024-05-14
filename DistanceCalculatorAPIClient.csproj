@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.DistanceCalculator</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/distancecalculator</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Distance Calculator is a simple tool for calculating the distance between two locations. It returns the distance in miles and kilometers.</Description>
+    <RepositoryUrl>https://github.com/apiverve/distancecalculator-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>distance calculator; distance calculator api; distance calculator tool; distance calculator software; distance calculator service; distance calculator library; distance calculator sdk; distance calculator code; distance calculator script; distance calculator program; distance calculator application; distance calculator app; distance calculator utility; distance calculator helper; distance calculator helper tool; distance calculator helper software; distance calculator helper service; distance calculator helper library; distance calculator helper sdk; distance calculator helper code; distance calculator helper script; distance calculator helper program; distance calculator helper application; distance calculator helper app; distance calculator helper utility; distance calculator helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
