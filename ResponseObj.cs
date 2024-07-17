@@ -22,9 +22,6 @@ public class location1
 
 public class location2
 {
-    [JsonProperty("zipcode")]
-    public string zipcode { get; set; }
-
     [JsonProperty("latitude")]
     public string latitude { get; set; }
 
