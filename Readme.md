@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new distancecalculatorQueryOptions {
+var queryOptions = new DistanceCalculatorQueryOptions {
   lat1 = 36.7783,
   lon1 = -119.4179,
   lat2 = 34.0522,
@@ -111,7 +111,8 @@ if(response.error != null) {
       "city": "Los Angeles",
       "state": "California"
     }
-  }
+  },
+  "code": 200
 }
 ```
 
